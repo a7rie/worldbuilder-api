@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "location_id": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "string"
+    },
+    "birth_date": {
+      "type": "string"
+    },
+    "death_date": {
+      "type": "string"
+    },
+    "backstory": {
+      "type": "string"
+    },
+    "appearance": {
+      "type": "string"
+    },
+    "morality": {
+      "type": "string"
+    }
+  },
+  "required": ["name"]
+}

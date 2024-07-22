@@ -1,0 +1,20 @@
+require("dotenv").config()
+
+const PORT = process.env.PORT
+const DATABASE_USER = process.env.DATABASE_USER
+const DATABASE_NAME= process.env.DATABASE_NAME
+const DATABASE_PASSWORD = process.env.DATABASE_PASSWORD
+const DATABASE_HOST = process.env.DATABASE_HOST
+const JWT_SECRET = process.env.JWT_SECRET
+
+const TOKEN_EXPIRE_TIME_SECONDS = Number(process.env.TOKEN_EXPIRE_TIME_SECONDS)
+
+module.exports = {
+  PORT,
+  DATABASE_USER,
+  DATABASE_NAME,
+  DATABASE_PASSWORD,
+  DATABASE_HOST,
+  TOKEN_EXPIRE_TIME_SECONDS,
+  JWT_SECRET
+}

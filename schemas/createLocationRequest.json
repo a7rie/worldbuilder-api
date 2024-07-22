@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "location_type": {
+      "type": "string",
+      "enum": ["City", "Landscape", "Building", "Other"]
+    },
+    "population": {
+      "type": "integer",
+      "minimum": 0
+    }
+  },
+  "required": ["name", "location_type"]
+}

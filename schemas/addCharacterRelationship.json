@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "properties": {
+    "char_id": {
+      "type": "integer"
+    },
+    "relationship_type": {
+      "type": "string",
+      "enum": ["Friends", "Enemies", "Romantic",  "Indifferent", "Other"]
+    },
+    "relationship_description": {
+      "type": "string"
+    }
+  },
+  "required": ["char_id", "relationship_type"]
+}
