@@ -141,11 +141,11 @@ async function characterOverview(charId, worldId) {
     delete relationship.char1_name
     delete relationship.char2_name
     if (char1_id === charId) {
-      relationship["char_id"] = char2_id
-      relationship["char_name"] = char2_name
-    } else {
       relationship["char_id"] = char1_id
       relationship["char_name"] = char1_name
+    } else {
+      relationship["char_id"] = char2_id
+      relationship["char_name"] = char2_name
     }
     return relationship
   })
